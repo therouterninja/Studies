@@ -15,7 +15,6 @@ def inplace_quicksort(array, start_idx=0, end_idx=None):
       array[start_idx+idx], array[wall_idx] = array[wall_idx], array[start_idx+idx]
       wall_idx += 1
 
-
   # Swap pivot value(end) with wall index if it's smaller.
   if array[wall_idx] > pivot_value:
     array[wall_idx], array[end_idx] = array[end_idx], array[wall_idx]
