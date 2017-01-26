@@ -1,6 +1,6 @@
 "user","group","location","id","count","description"
-"user1","google","MTV",123,10.0,"valid input" - expected float value
-"user2","google","MTV",123,"10.0","valid input" - expected float value in quotes
+"user1","google","MTV",123,10.0,"valid input - expected float value"
+"user2","google","MTV",123,"10.0","valid input - expected float value in quotes"
 "user3",",,,,,,","MTV",123,10,0,"valid input - extra commas in column 2"
 "user4",,,,10.0, - valid input - "blank values in col 1-4"
 "user5","random"test","MTV",123,10.0,0,"valid input - extra quotes in column 2"
