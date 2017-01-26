@@ -5,6 +5,7 @@ def find_nth_mean(n, filename):
 
   with open(filename) as f:
     for line in f:
+      # Ignore the first row (column descriptions).
       if first_col:
         first_col = False
         continue
@@ -42,8 +43,7 @@ def find_nth_mean(n, filename):
         else:
           pass
 
-        # Add to total if we detect we've hit col 6, and thus have col 5
-        # in our buffer
+        # Add to total if we detect we've hit col 6.   Col 5 should be stored at this point.
         if col_count == 6:
           col_count = 1 # Reset col colunt
           try:
