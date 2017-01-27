@@ -36,12 +36,9 @@ def find_nth_mean(n, filename):
         elif not start_quote and not end_quote and c == ',':
           col_count += 1
 
-        # Buffer characters in col 5.
+        # Only buffer characters in col 5.
         elif not start_quote and col_count == 5:
           string_buffer += c
-        # We don't care about non col 5 characters.
-        else:
-          pass
 
         # Add to total if we detect we've hit col 6.   Col 5 should be stored at this point.
         if col_count == 6:
