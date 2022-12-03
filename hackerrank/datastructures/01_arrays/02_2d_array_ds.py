@@ -16,4 +16,4 @@ for i,row in enumerate(arr):
         except:
             pass
         
-print x
+print(x)
